@@ -1,6 +1,16 @@
-// Samir: Creating your own filter() function
-// Rohit Chauhan: Day 3
+// Rohit Chauhan: Function Implementation
+function map<T, U>(items: T[], transform: (item: T, index: number) => U): U[] {
+  const result: U[] = []
 
+  for (let index = 0; index < items.length; index++) {
+    result.push(transform(items[index], index))
+  }
+  return result
+}
+//Usage
+
+
+// Prototype: myFilter
 Array.prototype.myFilter = function (callback) {
 	if (typeof callback !== "function") {
 		throw new TypeError(`${callback} isn't a function!`);

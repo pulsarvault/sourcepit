@@ -1,6 +1,4 @@
-// Zustand like Library creation (Learning: Day 2 for Samir)
-
-// Zustand-lite library Code
+// Zustand like Library creation
 const createStore = (initializer) => {
 
   let state = {};
